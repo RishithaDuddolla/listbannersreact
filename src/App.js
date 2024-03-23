@@ -24,14 +24,14 @@ const bannerCardsList = [
   },
 ]
 
-const App = () => {
-  ;<div className="bannersview">
+const App = () => (
+  <div className="bannersview">
     <ul className="card">
       {bannerCardsList.map(eachitem => (
         <BoxComponent userdeets={eachitem} key={eachitem.id} />
       ))}
     </ul>
   </div>
-}
+)
 
 export default App
